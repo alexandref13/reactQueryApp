@@ -1,13 +1,11 @@
-import { Box, NativeBaseProvider } from 'native-base';
+import { Box, NativeBaseProvider } from "native-base";
+import { HomeScreen } from "./screens/Home/HomeScreen";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function App() {
-  var app = '';
-
   return (
     <NativeBaseProvider>
-      <Box flex={1} alignItems={'center'} justifyContent={'center'}>
-        Hello aa
-      </Box>
+      <HomeScreen />
     </NativeBaseProvider>
   );
 }
